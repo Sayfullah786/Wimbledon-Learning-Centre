@@ -7,7 +7,7 @@ const Appointment = () => {
         <iframe
           width="100%"
           className="h-[520px]"
-          src="https://wimbledonlearningcentre.zohobookings.eu/portal-embed#/251036000000042142"
+          src="https://wimbledonlearningcentre.zohobookings.eu/portal-embed#/251036000000052006"
           frameBorder="0"
         >
           {" "}
