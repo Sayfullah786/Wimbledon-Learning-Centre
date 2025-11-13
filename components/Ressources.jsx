@@ -1,9 +1,8 @@
-"use client";
 import ZohoWebform from "./ui/ZohoWebform";
 
 const Ressources = () => {
   return (
-    <section id="ressources" data-lenis-scroll-to className="p-sec sm:pt-0! max-sm:mb-6">
+    <section id="ressources" className="p-sec sm:pt-0! max-sm:mb-6">
       <div className="maxWSec mx-auto px-2 md:px-8 flex flex-col items-center gap-6 text-center">
         {/* Title */}
         <h1 className="font-bebas h1">
