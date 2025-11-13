@@ -6,7 +6,7 @@ const Enquiry = () => {
   return (
     <>
       {/* <ZohoForm /> */}
-      <section id="enquiry"  data-lenis-scroll-to className="p-sec sm:!pt-0">
+      <section id="enquiry" className="p-sec sm:!pt-0">
         <div className="maxWSec mx-auto ">
           <h2 className="font-bebas h2 sm:mb-8 text-center">
             Have an <span className="text-main">Enquiry?</span>
