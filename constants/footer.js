@@ -42,6 +42,18 @@ const FooterLinks = [
     title: "Other",
     content: [
       {
+        title: "Courses",
+        src: "/courses",
+      },
+      {
+        title: "Curriculum",
+        src: "/curriculum",
+      },
+      {
+        title: "HAF Camps",
+        src: "/haf",
+      },
+      {
         title: "Matts App",
         src: "#mattsapp",
       },

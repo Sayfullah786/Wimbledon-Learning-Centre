@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="maxW flex relative flex-1">
         <Image
           aria-hidden
-          src="/hero.png"
+          src="/hero2.webp"
           alt="hero background"
           fill
           className="rounded-2xl absolute left-0 top-0 inset-0 object-cover block"
@@ -30,14 +30,14 @@ const Hero = () => {
         <section className="relative bg-black/30 z-10 flex-1 flex flex-col items-center justify-center rounded-2xl">
           <Link
             href={"/"}
-            className="w-28 absolute left-0 top-0 rounded-br-2xl bg-background pr-2 pb-2">
+            className="w-22 sm:w-28 absolute left-0 top-0 rounded-br-2xl bg-background pr-2 pb-2">
             <Image
               aria-hidden
-              src="/logo.png"
+              src="/logo2.png"
               alt="logo"
               width={150}
               height={150}
-              className="w-full rounded-xl"
+              className="w-full aspect-square object-cover rounded-xl"
             />
 
             <div className="z-[-1] rotate-180 absolute top-0 left-full h-6 sm:h-12 aspect-square rounded-br-2xl sm:shadow-[1.5rem_1.5rem_0_0_#fff] shadow-[0.5rem_0.5rem_0_0_#fff] bg-transparent"></div>
@@ -49,11 +49,10 @@ const Hero = () => {
               <Highlighter padding={4} action="highlight" color="#229EBD">
                 Empowering
               </Highlighter>{" "}
-              the New
+              the Next
               <br />
-              Generation with Next
+              Gen with Techpert
               <br />
-              Level{" "}
               <Highlighter
                 strokeWidth={4}
                 padding={-4}
@@ -64,9 +63,9 @@ const Hero = () => {
               </Highlighter>
             </h1>
             <h4 className="text-center leading-normal h4">
-              Results-Driven Tuition.
+              Result and Project Based
               <br />
-              Maths and English Experts.
+              Education
             </h4>
             <a href="#register" data-lenis-scroll-to>
               <Button
@@ -118,7 +117,7 @@ const Hero = () => {
           </aside>
 
           {/* top right links */}
-          <aside className="absolute top-0 right-0 flex gap-2 p-2.5">
+          <aside className="max-sm:hidden absolute top-0 right-0 flex gap-2 p-2.5">
             <Link href={socials.facebook || ""} target={"_blank"} rel={"noopener noreferrer"}> <Button
               size="s"
               variant="icon"
