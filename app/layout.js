@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.variable} ${bebas_neue.variable} ${poppins.className} antialiased`}>
         <LenisSmooth />
         <main className="relative">
-          {/* <Navbar /> */}
+          <Navbar />
           {children}
           <Footer />
         </main>
