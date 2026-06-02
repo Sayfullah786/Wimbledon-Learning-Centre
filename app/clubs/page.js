@@ -1,4 +1,5 @@
 import ClubsPage from "@/components/ClubsPage";
+import { Suspense } from "react";
 
 export const metadata = {
   title: "After School Clubs | Wimbledon Learning Centre",
@@ -7,5 +8,9 @@ export const metadata = {
 };
 
 export default function Clubs() {
-  return <ClubsPage />;
+  return (
+    <Suspense fallback={<div className="p-12 text-center text-gray-500">Loading clubs...</div>}>
+      <ClubsPage />
+    </Suspense>
+  );
 }
