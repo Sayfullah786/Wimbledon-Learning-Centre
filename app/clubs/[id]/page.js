@@ -685,8 +685,7 @@ const RegistrationForm = ({ club, activeBlock, onSuccess }) => {
   );
 };
 
-/* ═══════ Page ═══════ */
-export default function ClubApplyPage({ params }) {
+function ClubApplyPageInner({ params }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const school = searchParams.get("school");
@@ -762,5 +761,20 @@ export default function ClubApplyPage({ params }) {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ClubApplyPage({ params }) {
+  return (
+    <React.Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="flex flex-col items-center gap-3">
+          <Loader2 className="w-10 h-10 text-main animate-spin" />
+          <p className="text-gray-500 text-sm font-medium">Loading...</p>
+        </div>
+      </div>
+    }>
+      <ClubApplyPageInner params={params} />
+    </React.Suspense>
   );
 }
