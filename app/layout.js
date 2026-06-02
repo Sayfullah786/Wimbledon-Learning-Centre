@@ -3,6 +3,7 @@ import "./globals.css";
 import { Poppins, Bebas_Neue } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { AuthProvider } from "@/context/AuthContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,12 +26,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={`${poppins.variable} ${bebas_neue.variable} ${poppins.className} antialiased`}>
-        <LenisSmooth />
-        <main className="relative">
-          <Navbar />
-          {children}
-          <Footer />
-        </main>
+        <AuthProvider>
+          <LenisSmooth />
+          <main className="relative">
+            <Navbar />
+            {children}
+            <Footer />
+          </main>
+        </AuthProvider>
       </body>
     </html>
   );

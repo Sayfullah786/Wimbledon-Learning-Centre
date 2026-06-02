@@ -15,6 +15,7 @@ const navLinks = [
   { title: "Courses", href: "/courses" },
   { title: "Curriculum", href: "/curriculum" },
   { title: "HAF Camps", href: "/haf" },
+  { title: "Clubs", href: "/clubs" },
 ];
 
 const Navbar = () => {
