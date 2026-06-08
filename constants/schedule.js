@@ -1,11 +1,11 @@
  const schedule = [
-    { day: "Mon", hours: "13:00 - 19:00" },
-    { day: "Tue", hours: "16:00 - 20:00" },
-    { day: "Wed", hours: "16:00 - 20:00" },
-    { day: "Thu", hours: "13:00 - 19:00" },
-    { day: "Fri", hours: "16:00 - 20:00" },
-    { day: "Sat", hours: "13:00 - 20:00" },
-    { day: "Sun", hours: "09:00 - 14:00" },
+    { day: "Mon", hours: "09:00 - 19:30" },
+    { day: "Tue", hours: "09:00 - 19:30" },
+    { day: "Wed", hours: "09:00 - 19:30" },
+    { day: "Thu", hours: "09:00 - 19:30" },
+    { day: "Fri", hours: "09:00 - 19:30" },
+    { day: "Sat", hours: "09:00 - 15:00" },
+    { day: "Sun", hours: "Closed" },
   ];
 
   export default schedule;

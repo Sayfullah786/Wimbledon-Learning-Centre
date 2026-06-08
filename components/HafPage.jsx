@@ -71,7 +71,6 @@ const FaqItem = ({ faq, index, isOpen, onToggle }) => {
   );
 };
 
-/* ───── Location Card ───── */
 const LocationCard = ({ location, index }) => {
   return (
     <motion.div
@@ -79,7 +78,7 @@ const LocationCard = ({ location, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group relative bg-white rounded-2xl border border-gray-200 p-6 hover:border-main/30 hover:shadow-[0_8px_30px_rgba(34,158,189,0.10)] transition-all duration-400"
+      className="group relative bg-white rounded-2xl border border-gray-200 p-6 hover:border-main/30 hover:shadow-[0_8px_30px_rgba(34,158,189,0.10)] transition-[border-color,box-shadow] duration-500"
     >
       {/* Gradient accent */}
       <div className="absolute top-0 left-6 right-6 h-0.5 rounded-b-full bg-gradient-to-r from-main/0 via-main to-main/0 opacity-0 group-hover:opacity-100 transition-opacity duration-400" />

@@ -197,3 +197,33 @@ html.lenis body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Club Description Rich Text Styles */
+.club-description p {
+  @apply text-gray-600 text-sm sm:text-base leading-relaxed mb-2;
+}
+
+.club-description ul,
+.club-description ol {
+  @apply space-y-0.5 ml-6 text-gray-600 text-sm sm:text-base list-outside;
+}
+
+.club-description ul {
+  @apply list-disc;
+}
+
+.club-description ol {
+  @apply list-decimal;
+}
+
+.club-description li {
+  @apply pl-1;
+}
+
+.club-description strong {
+  @apply font-semibold text-gray-900;
+}
+
+.club-description a {
+  @apply text-blue-600 hover:underline;
+}
