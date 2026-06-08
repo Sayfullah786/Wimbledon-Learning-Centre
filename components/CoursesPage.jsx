@@ -21,7 +21,7 @@ const HighlightCard = ({ highlight, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group bg-white rounded-2xl border border-gray-200 p-6 hover:border-main/30 hover:shadow-[0_8px_30px_rgba(34,158,189,0.10)] transition-all duration-400 relative"
+      className="group bg-white rounded-2xl border border-gray-200 p-6 hover:border-main/30 hover:shadow-[0_8px_30px_rgba(34,158,189,0.10)] transition-[border-color,box-shadow] duration-500 relative"
     >
       <div className="absolute top-0 left-6 right-6 h-0.5 rounded-b-full bg-gradient-to-r from-main/0 via-main to-main/0 opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
       <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-main/10 to-sec/10 flex items-center justify-center mb-4 group-hover:from-main/20 group-hover:to-sec/20 transition-all duration-300">
@@ -44,7 +44,7 @@ const CourseCard = ({ course, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.5, delay: index * 0.12 }}
-      className="group bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 hover:border-main/30 hover:shadow-[0_8px_30px_rgba(34,158,189,0.10)] transition-all duration-400 relative overflow-hidden"
+      className="group bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 hover:border-main/30 hover:shadow-[0_8px_30px_rgba(34,158,189,0.10)] transition-[border-color,box-shadow] duration-500 relative overflow-hidden"
     >
       <div
         className="absolute top-0 left-0 w-1 h-full rounded-r-full transition-all duration-300 group-hover:w-1.5"

@@ -1,4 +1,4 @@
-import ClubsPage from "@/components/ClubsPage";
+import ClubsPage from "@/components/ClubsPage/index";
 import { Suspense } from "react";
 
 export const metadata = {
