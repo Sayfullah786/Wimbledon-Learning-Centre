@@ -199,6 +199,13 @@ html.lenis body {
 }
 
 /* Club Description Rich Text Styles */
+.club-description {
+  @apply break-words;
+}
+.club-description * {
+  max-width: 100% !important;
+  white-space: normal !important;
+}
 .club-description p {
   @apply text-gray-600 text-sm sm:text-base leading-relaxed mb-2;
 }

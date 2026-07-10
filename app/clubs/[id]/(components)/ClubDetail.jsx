@@ -43,7 +43,7 @@ const ClubDetail = ({ club, activeBlock, school, backHref, router, remainingSess
   }, [activeBlock, club.schedules]);
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 w-full min-w-0">
       {/* Breadcrumbs */}
       <div className="flex items-center gap-2 text-sm text-gray-500">
         <button
@@ -56,8 +56,8 @@ const ClubDetail = ({ club, activeBlock, school, backHref, router, remainingSess
       </div>
 
       {/* Title */}
-      <div>
-        <h1 className="font-bebas text-4xl sm:text-5xl text-gray-900 leading-tight tracking-wide">
+      <div className="w-full min-w-0">
+        <h1 className="font-bebas text-4xl sm:text-5xl text-gray-900 leading-tight tracking-wide break-words">
           {club.name}
         </h1>
         <p className="text-main font-semibold mt-2 text-base">{club.school_name || "Coding Club"}</p>
@@ -65,9 +65,11 @@ const ClubDetail = ({ club, activeBlock, school, backHref, router, remainingSess
 
       {/* Description */}
       <div
-        className="club-description"
-        dangerouslySetInnerHTML={{ __html: club.description }}
-      />
+        className="club-description w-full min-w-0 overflow-hidden"
+        style={{ wordBreak: 'break-word', overflowWrap: 'anywhere' }}
+        dangerouslySetInnerHTML={{
+          __html: club.description ? club.description.replace(/&nbsp;/g, ' ') : ''
+        }} />
 
       {/* Quick Stats */}
       <div className="grid grid-cols-2 gap-4">

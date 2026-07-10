@@ -43,7 +43,7 @@ const Step2Payment = ({
             {form.yearGroup}
           </span>
           <span className="text-gray-500">Club</span>
-          <span className="text-gray-900 font-medium truncate">
+          <span className="text-gray-900 font-medium truncate min-w-0">
             {club.name}
           </span>
           <span className="text-gray-500">Sessions</span>
