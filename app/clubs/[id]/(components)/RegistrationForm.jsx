@@ -148,14 +148,14 @@ const RegistrationForm = ({ club, activeBlock, remainingSessionsCount }) => {
   };
 
   return (
-    <div className="bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-100/50 overflow-hidden">
+    <div className="w-full min-w-0 bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-100/50 overflow-hidden">
       {/* Form header */}
       <div className="bg-gradient-to-r from-[#0a2e3d] to-[#0e3a4d] px-6 sm:px-8 py-6">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
             <Cpu className="w-5 h-5 text-white" />
           </div>
-          <div>
+          <div className="min-w-0 flex-1">
             <h2 className="text-white font-semibold text-lg">Club Registration</h2>
             <p className="text-white/60 text-xs mt-0.5 truncate max-w-full">
               {club.name}
